@@ -1,0 +1,78 @@
+/*
+#include<iostream>            // C++ program to demonstrate the use of classes and objects
+using namespace std;
+
+class Box{
+    public:int length, breadth;
+
+    void displayArea(){
+        int area = length * breadth;
+        cout << "Area of Box: " << area << endl;
+    }
+};
+
+int main(){
+    Box b;
+    b.length = 5;
+    b.breadth = 10;
+    b.displayArea();
+    return 0;
+}
+*/
+
+//-----------------------------------------------------------------------------
+
+/*
+#include <iostream>     // C++ program to demonstrate the use of classes and objects with parameterized constructors
+using namespace std;
+
+class Box{
+    public: int length, breadth;
+    Box(int l, int b){
+        length = l;
+        breadth = b;
+    }
+    void displayArea(){
+        int area = length * breadth;
+        cout << "Area of Box: " << area << endl;
+    }
+};
+
+int main(){
+    Box b(5, 10);
+    b.displayArea();
+    return 0;
+}
+*/
+
+//-----------------------------------------------------------------------------
+
+/*
+#include <iostream>     // C++ program to demonstrate the use of pointer concept with parameterized constructors
+using namespace std;
+
+class Box{
+    public: int length, breadth;
+    Box(int l, int b)
+    {
+       this->length = l;
+       this->breadth = b;
+    }
+
+    void displayArea(){
+        int area = length * breadth;
+        cout << "Area of Box:"<<area<<endl;
+    }
+
+};
+
+int main(){
+    
+    Box *b = new Box(5, 10);
+    b->displayArea();
+    delete b;
+    return 0;
+}
+*/
+
+//-----------------------------------------------------------------------------
